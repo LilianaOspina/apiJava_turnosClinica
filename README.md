@@ -1,6 +1,9 @@
+![img](./assets/odon.png)
+
+
 # Sistema de reserva de turnos
 
-Implementa un sistema que permie administrar la reserva de turnos para una clínica odontológica. 
+Implementa un sistema que permite administrar la reserva de turnos para una clínica odontológica. 
 
 Cumple con los siguientes requerimientos:
 
@@ -31,7 +34,7 @@ Cumple con los siguientes requerimientos:
 
 ✅ Valida el ingreso al sistema mediante un login con usuario y password. 
 
-✅ Permite a cualquier usuario logueado (ROLE_USER) registrar un turno, pero solo a quienes tengan un rol de administración (ROLE_ADMIN) poder gestionar odontólogos y pacientes. Un usuario podrá tener un único rol y los mismos se ingresarán directamente en la base de datos.
+✅ Permite a cualquier usuario logueado (`ROLE_USER`) registrar un turno, pero solo a quienes tengan un rol de administración (`ROLE_ADMIN`) poder gestionar odontólogos y pacientes. Un usuario podrá tener un único rol y los mismos se ingresarán directamente en la base de datos.
 
 ## Requerimientos técnicos
 
@@ -39,13 +42,13 @@ La aplicación está desarrollada en capas:
 
 - **Capa de entidades de negocio:** Son las clases Java de nuestro negocio modelado a través del paradigma orientado a objetos.
 
-- **Capa de acceso a datos (Repository):** Son las clases que se encargarán de acceder a la base de datos.
+- **Capa de acceso a datos (Repository):** Son las clases que se encargan de acceder a la base de datos.
 
-- **Capa de datos (base de datos):** Es la base de datos de nuestro sistema modelado a través de un modelo entidad-relación. Utilizaremos la base H2 por su practicidad.
+- **Capa de datos (base de datos):** Es la base de datos de nuestro sistema modelado a través de un modelo entidad-relación. Utilizamos la base H2 por su practicidad.
 
 - **Capa de negocio:** Son las clases service que se encargan de desacoplar el acceso a datos de la vista.
 
-- **Capa de presentación:** Son las pantallas web que tendremos que desarrollar utilizando el framework de Spring Boot MVC con los controladores y alguna de estas dos opciones: HTML+JavaScript o React para la vista.
+- **Capa de presentación:** Son las pantallas web que desarrollamos utilizando el framework de Spring Boot MVC con los controladores y React para la vista.
 
 ## Manejo de excepciones
 
@@ -53,4 +56,4 @@ Maneja excepciones logueando cualquier excepción que se pueda generar.
 
 ## Test
 
-Reaaliza test unitarios para garantizar la calidad de los desarrollos.
+Realiza test unitarios para garantizar la calidad de los desarrollos.
